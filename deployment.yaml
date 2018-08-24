@@ -11,7 +11,7 @@ spec:
     metadata:
       labels:
         app: my-deployment
-        version: v1
+        version: v2
     spec:
       containers:
       - name: my-pod
