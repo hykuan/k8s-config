@@ -38,6 +38,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: hykuan1126/nginx-test:1.0.0
+        image: hykuan1126/nginx-test:latest
         ports:
         - containerPort: 8080
