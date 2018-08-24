@@ -11,3 +11,7 @@ spec:
         backend:
           serviceName: kubernetes-bootcamp
           servicePort: 8080
+      - path: /nginx
+        backend:
+          serviceName: my-nginx-service
+          servicePort: 80

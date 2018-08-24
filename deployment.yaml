@@ -19,3 +19,25 @@ spec:
         image: gcr.io/google-samples/kubernetes-bootcamp:v1
         ports:
         - containerPort: 8080
+---
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  namespace: default
+  name: nginx
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: my-nginx
+  template:
+    metadata:
+      labels:
+        app: my-nginx
+        version: 1.0.0
+    spec:
+      containers:
+      - name: nginx
+        image: hykuan1126/nginx-test:1.0.0
+        ports:
+        - containerPort: 8080

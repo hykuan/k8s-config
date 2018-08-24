@@ -12,3 +12,17 @@ spec:
     targetPort: 8080
   selector:
     app: my-deployment
+---
+apiVersion: v1
+kind: Service
+metadata:
+  namespace: default
+  name: my-nginx-service
+spec:
+  type: NodePort
+  ports:
+  - port: 80
+    protocol: TCP
+    targetPort: 80
+  selector:
+    app: my-nginx
