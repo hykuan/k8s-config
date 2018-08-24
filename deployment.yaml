@@ -16,6 +16,6 @@ spec:
     spec:
       containers:
       - name: my-pod
-        image: jocatalin/kubernetes-bootcamp:v2
+        image: gcr.io/google-samples/kubernetes-bootcamp:v1
         ports:
         - containerPort: 8080
