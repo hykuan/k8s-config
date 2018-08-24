@@ -2,7 +2,7 @@ apiVersion: extensions/v1beta1
 kind: Ingress
 metadata:
   namespace: default
-  name: test-ingress
+  name: my-ingress
 spec:
   rules:
   - http:
