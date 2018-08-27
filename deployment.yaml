@@ -38,6 +38,6 @@ spec:
     spec:
       containers:
       - name: nginx
-        image: hykuan1126/nginx-test
+        image: gcr.io/myproject-212609/nginx-test
         ports:
         - containerPort: 8080
