@@ -34,7 +34,7 @@ spec:
     metadata:
       labels:
         app: my-nginx
-        version: 1.0.0
+        version: 1.0.3
     spec:
       containers:
       - name: nginx
