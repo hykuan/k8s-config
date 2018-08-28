@@ -4,7 +4,7 @@ metadata:
   namespace: default
   name: kubernetes-bootcamp
 spec:
-  replicas: 4
+  replicas: 3
   selector:
     matchLabels:
       app: my-deployment
